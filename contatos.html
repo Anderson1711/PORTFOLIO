@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contatos.css">
+    <title>Contatos</title>
+</head>
+<body>
+    <h1>CONTATOS</h1>
+    <main>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">
+                    Nome
+                </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">
+                    E-mail
+                </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">
+                    Assunto
+                </label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">
+                    Mensagem
+                </label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+        <div class="footer-content">
+            <!-- Adicione os ícones SVG para as redes sociais aqui -->
+            <a href="https://github.com/Anderson1711" class="social-icon" aria-label="GitHub">
+                <img src="./github-svgrepo-com.svg" alt="GitHub" width="75" height="75">
+            </a>
+            <a href="https://linkedin.com/in/Anderson1711" class="social-icon" aria-label="LinkedIn">
+                <img src="./linkedin-svgrepo-com.svg" alt="LinkedIn" width="75" height="75">
+            </a>
+            <a href="mailto:example@gmail.com" class="social-icon" aria-label="G-mail">
+                <img src="./gmail-svgrepo-com.svg" alt="G-mail" width="75" height="75">
+            </a>
+        </div>
+    </main>
+    <a href="./index.html" class="btn-voltar">Voltar à página inicial</a>
+</body>
+</html>

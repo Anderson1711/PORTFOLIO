@@ -1,0 +1,144 @@
+/* Estilo global para o corpo da página */
+body {
+    background-color: #000000; /* Define a cor de fundo da página */
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o padding padrão do navegador */
+    font-family: Arial, sans-serif; /* Define a fonte padrão para a página */
+    min-height: 100vh; /* Garante que o corpo ocupe a altura total da viewport */
+    text-align: center; /* Centraliza o texto dentro dos contêineres */
+    color: #fff; /* Cor do texto padrão */
+}
+
+h1 {
+    margin-top: 0; /* Remove a margem superior do título */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    font-family: 'Roboto', sans-serif; /* Aplica uma fonte estilizada */
+    font-size: 4rem; /* Define um tamanho de fonte grande */
+    color: #b57eec; /* Define uma cor de texto estilosa */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao texto */
+    font-weight: 700; /* Aplica um peso de fonte mais forte */
+    letter-spacing: 1px; /* Adiciona espaçamento entre letras */
+}
+
+.introducao {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 150px; /* Ajuste o tamanho da foto conforme necessário */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.habilidades {
+    padding: 20px;
+}
+
+.habilidades h2 {
+    font-size: 2rem;
+    color: #b57eec;
+    margin-bottom: 20px;
+}
+
+.habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.habilidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+}
+
+.habilidade img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.habilidade p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.linha-do-tempo {
+    padding: 20px;
+}
+
+.linha-do-tempo h2 {
+    font-size: 2rem;
+    color: #b57eec;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #b57eec;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 60px;
+}
+
+.timeline-date {
+    position: absolute;
+    left: -80px;
+    width: 70px;
+    text-align: right;
+    background-color: #b57eec;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.timeline-content {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px; /* Define o espaçamento interno do botão */
+    margin-top: 20px; /* Define a margem superior para separar do conteúdo */
+    background-color: #b57eec; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto no botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Define bordas arredondadas para o botão */
+    font-size: 16px; /* Define o tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.btn-voltar:hover {
+    background-color: #ae00ff; /* Define a cor de fundo quando o botão é passado o mouse em cima */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .habilidades-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

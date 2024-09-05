@@ -1,0 +1,217 @@
+/* Estilo global para o corpo da página */
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Estilo para o título principal da página */
+h1 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    color: #b57eec;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Estilo para os filtros de categoria */
+.filtros {
+    margin-bottom: 20px;
+}
+
+/* Estilo para o botão de filtro */
+.filtro {
+    background-color: #b57eec;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Estilo para o botão de filtro quando o mouse passa sobre ele */
+.filtro:hover {
+    background-color: #ae00ff;
+    transform: scale(1.05);
+}
+
+/* Estilo para o botão personalizado */
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #b57eec;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para o botão quando o mouse passa sobre ele */
+.btn-voltar:hover {
+    background-color: #ae00ff;
+}
+
+/* Estilo para a galeria de projetos */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo para cada thumbnail (miniatura) de projeto */
+.thumbnail {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito de zoom e sombra ao passar o mouse sobre a miniatura */
+.thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para as imagens dentro das miniaturas */
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Estilo para o texto dentro das miniaturas */
+.thumbnail p {
+    padding: 10px;
+    margin: 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Estilo para o botão de detalhes dentro das miniaturas */
+.btn-detalhes {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #b57eec;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para o botão de detalhes quando o mouse passa sobre ele */
+.btn-detalhes:hover {
+    background-color: #ae00ff;
+}
+
+/* Estilo para os modais */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Estilo para o conteúdo do modal */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 15% auto;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+/* Efeito de exibição do modal */
+.modal.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Estilo para a imagem dentro do modal */
+.modal-image {
+    width: 80%;
+    height: auto;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+/* Estilo para o botão de fechar no modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Estilo para o botão de fechar quando o mouse passa sobre ele */
+.close:hover,
+.close:focus {
+    color: #000;
+    cursor: pointer;
+}
+
+/* Estilo para o botão de sair do modal */
+.btn-sair {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #b57eec;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para o botão de sair quando o mouse passa sobre ele */
+.btn-sair:hover {
+    background-color: #ae00ff;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}

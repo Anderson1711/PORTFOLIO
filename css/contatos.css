@@ -1,0 +1,105 @@
+/* Estilo global para o corpo da página */
+body {
+    background-color: #000000; /* Define a cor de fundo da página */
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o padding padrão do navegador */
+    font-family: Arial, sans-serif; /* Define a fonte padrão para a página */
+    min-height: 100vh; /* Garante que o corpo ocupe a altura total da viewport */
+    text-align: center; /* Centraliza o texto dentro dos contêineres */
+    color: #fff; /* Cor do texto padrão */
+}
+
+h1 {
+    margin-top: 0; /* Remove a margem superior do título */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    font-family: 'Roboto', sans-serif; /* Aplica uma fonte estilizada */
+    font-size: 4rem; /* Define um tamanho de fonte grande */
+    color: #b57eec; /* Define uma cor de texto estilosa */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao texto */
+    font-weight: 700; /* Aplica um peso de fonte mais forte */
+    letter-spacing: 1px; /* Adiciona espaçamento entre letras */
+}
+
+.contact-form {
+    max-width: 600px; /* Define a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário na página */
+    padding: 20px; /* Adiciona preenchimento interno */
+    background-color: #333; /* Cor de fundo do formulário */
+    border-radius: 8px; /* Borda arredondada do formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra ao redor do formulário */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espaço entre os campos do formulário */
+    text-align: left; /* Alinha o texto dos labels à esquerda */
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Espaço abaixo dos labels */
+    color: #fff; /* Cor do texto dos labels */
+}
+
+
+input, textarea {
+    width: 96%; /* Faz com que os campos ocupem toda a largura disponível */
+    padding: 10px; /* Adiciona preenchimento interno */
+    border: 1px solid #ccc; /* Define a borda dos campos */
+    border-radius: 4px; /* Bordas arredondadas para os campos */
+    background-color: #222; /* Cor de fundo dos campos */
+    color: #fff; /* Cor do texto nos campos */
+}
+
+input:focus, textarea:focus {
+    border-color: #b57eec; /* Cor da borda quando o campo está focado */
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px; /* Define o espaçamento interno do botão */
+    background-color: #b57eec; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto no botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Define bordas arredondadas para o botão */
+    font-size: 16px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+.submit-button:hover {
+    background-color: #ae00ff; /* Cor do botão ao passar o mouse em cima */
+}
+
+/* Estilo para os ícones das redes sociais */
+.footer-content {
+    margin-top: 20px; /* Adiciona espaço acima dos ícones sociais */
+}
+
+.social-icon {
+    display: inline-block; /* Faz com que os ícones se comportem como blocos em linha */
+    margin: 0 10px; /* Adiciona espaço entre os ícones */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+.social-icon img {
+    display: block; /* Remove o espaço extra abaixo da imagem */
+    width: 75px; /* Ajusta a largura dos ícones */
+    height: 75px; /* Ajusta a altura dos ícones */
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px; /* Define o espaçamento interno do botão */
+    margin-top: 20px; /* Define a margem superior para separar do formulário */
+    background-color: #b57eec; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto no botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Define bordas arredondadas para o botão */
+    font-size: 16px; /* Define o tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.btn-voltar:hover {
+    background-color: #ae00ff; /* Define a cor de fundo quando o botão é passado o mouse em cima */
+}

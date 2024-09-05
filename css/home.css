@@ -1,0 +1,123 @@
+/* Estilo global para o corpo da página */
+body {
+    background-color: #000000; /* Define a cor de fundo da página */
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o padding padrão do navegador */
+    font-family: Arial, sans-serif; /* Define a fonte padrão para a página */
+    display: flex; /* Usa o modelo de layout flexível */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    min-height: 100vh; /* Garante que o corpo ocupe a altura total da viewport */
+    text-align: center; /* Centraliza o texto dentro dos contêineres */
+}
+
+/* Seção para o cabeçalho */
+.header-section {
+    width: 100%; /* Garante que o contêiner ocupe toda a largura da página */
+    background-color: #000000; /* Cor de fundo para a área do cabeçalho */
+    padding: 0.1px 20px; /* Adiciona espaço ao redor da seção */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    border-bottom: 2px solid #b57eec; /* Adiciona uma borda sutil abaixo da seção */
+}
+
+/* Contêiner para a logo */
+.header-container {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza a logo horizontalmente */
+    padding: 20px 0; /* Adiciona espaço ao redor do contêiner da logo */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+/* Estilo para a logo, garantindo que a imagem não ultrapasse os limites do contêiner */
+.logo img {
+    max-width: 100%; /* Faz a imagem se ajustar ao tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para a área do título dentro do cabeçalho */
+.content-header {
+    padding: 5px; /* Adiciona espaço ao redor do título */
+}
+
+/* Estilo para o título principal da página */
+h1 {
+    margin-top: 0; /* Remove a margem superior do título */
+    margin-bottom: 0px; /* Adiciona espaço abaixo do título */
+    font-family: 'Roboto', sans-serif; /* Aplica uma fonte estilizada */
+    font-size: 4rem; /* Define um tamanho de fonte grande */
+    color: #b57eec; /* Define uma cor de texto estilosa */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao texto */
+    font-weight: 700; /* Aplica um peso de fonte mais forte */
+    letter-spacing: 1px; /* Adiciona espaçamento entre letras */
+}
+
+/* Seção para o conteúdo principal com botões */
+.main-content {
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante disponível */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura da página */
+    background-color: #585858; /* Define uma cor de fundo diferente para a área dos botões */
+    padding: 15px; /* Adiciona espaço interno ao redor do contêiner do conteúdo */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    border-bottom: 2px solid #b57eec; /* Adiciona uma borda sutil abaixo da seção */
+}
+
+/* Estilo para o contêiner dos botões de chamada para ação */
+.cta-buttons {
+    margin-bottom: 0px; /* Adiciona espaço abaixo do contêiner dos botões */
+}
+
+/* Estilo para os botões de chamada para ação */
+.cta-button {
+    display: inline-block; /* Faz com que o link se comporte como um bloco em linha */
+    background-color: #b57eec; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    padding: 15px 30px; /* Adiciona espaço interno ao redor do texto do botão */
+    margin: 0 10px; /* Adiciona espaço entre os botões */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    font-size: 16px; /* Define o tamanho da fonte */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para cor, transformação e sombra */
+}
+
+/* Estilo para o botão quando o usuário passa o mouse sobre ele */
+.cta-button:hover {
+    background-color: #ae00ff; /* Altera a cor de fundo quando o mouse está sobre o botão */
+    transform: scale(1.05); /* Aumenta o botão ligeiramente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave ao redor do botão */
+}
+
+/* Estilo para o subtítulo da página */
+h2 {
+    margin: 0; /* Remove a margem padrão */
+    font-family: 'Roboto', sans-serif; /* Aplica uma fonte estilizada */
+    font-size: 2rem; /* Define um tamanho de fonte adequado */
+    color: #ffffff; /* Define uma cor de texto */
+    text-align: center; 
+    padding: 187px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da página */
+    background-color: #ffffff; /* Cor de fundo para o rodapé */
+    padding: 0px; /* Adiciona espaço interno ao redor do conteúdo do rodapé */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    text-align: center; /* Centraliza o texto dentro do rodapé */
+    border-top: 2px solid #b57eec; /* Adiciona uma borda sutil acima do rodapé */
+    position: relative; /* Permite que o conteúdo dentro do rodapé seja posicionado de forma relativa */
+}
+
+/* Estilo para os ícones das redes sociais */
+.footer-content {
+    margin-bottom: 5px; /* Adiciona espaço abaixo dos ícones sociais */
+}
+
+.social-icon {
+    display: inline-block; /* Faz com que os ícones se comportem como blocos em linha */
+    margin: 0px 5px; /* Adiciona espaço entre os ícones */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+.social-icon img {
+    display: block; /* Remove o espaço extra abaixo da imagem */
+}
